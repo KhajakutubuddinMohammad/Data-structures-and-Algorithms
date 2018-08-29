@@ -6,8 +6,14 @@ using namespace std;
 
 int main()
 {
-    vector<int> a={-1,-2,-3,2,6,-4,5,7,-1,-8,15};
-    int sum=0,max1=INT_MIN;
+    vector<int> a;
+    int sum=0,max1=INT_MIN,size,k;
+    cin>>size;
+    for(int i=0;i<size;i++)
+    {
+        cin>>k;
+        a.push_back(k);
+    }
     for(int i=0;i<a.size();i++)
     {
          sum=max(a[i],a[i]+sum);
